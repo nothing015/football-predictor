@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+
+# Secrets and local config (never commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Data and experiment output (versioned with DVC later, never in Git)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+mlruns/
+
+# OS and editor
+.DS_Store
+.idea/
